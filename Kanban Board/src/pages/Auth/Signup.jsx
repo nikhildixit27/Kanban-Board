@@ -20,7 +20,7 @@ export const Signup = () => {
         try {
             await register(email, password);
             toast.success('User registered successfully');
-            navigate(from, { replace: true });
+            navigate('/kanban');
         } catch (error) {
             const errorMessage = error.message;
             setError(errorMessage);
@@ -32,9 +32,7 @@ export const Signup = () => {
         registerWithGoogle()
             .then(() => {
                 toast.success('User registered successfully');
-                // on successfull registration, navigate to /kanban page
                 navigate('/kanban');
-                // navigate(from, { replace: true });
             })
             .catch((error) => {
                 const errorMessage = error.message;

@@ -70,7 +70,7 @@ const BoardPage = () => {
                                     setBoard(updatedBoard);
                                 }}
                             >
-                                <RxCross2 color="white" size={15} />
+                                <RxCross2 color="black" size={15} />
                             </button>
                         </div>
                         <span className="text-sm">{props.description}</span>
@@ -89,10 +89,10 @@ const BoardPage = () => {
                     </div>
                 )}
                 renderColumnHeader={(props) => (
-                    <div className="flex justify-between px-2">
-                        <span>{props.title}</span>
+                    <div className="flex justify-between px-2 border-black border-b-2">
+                        <span className="font-bold text-lg">{props.title}</span>
                         <IoMdAdd
-                            color="white"
+                            color="black"
                             size={25}
                             title="Add task"
                             onClick={() => {

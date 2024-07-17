@@ -29,8 +29,8 @@ export const boardData = {
                 {
                     id: 9,
                     title: "Data Table Page",
-                    description: "Server side Pagination",
-                    assignedTo: "Adam Brown",
+                    description: "Server side Pagination Required",
+                    assignedTo: "Raghav Dixit and Dhruv Dixit",
                     dueDate: new Date(2024, 7, 30),
                     files: [],
                 },
@@ -47,15 +47,7 @@ export const boardData = {
                     assignedTo: "Michael Brown",
                     dueDate: new Date(2024, 7, 15),
                     files: [],
-                },
-                {
-                    id: 11,
-                    title: "Custom Kanban Board",
-                    description: "Setup react-kanban dep within Dashboard as separate page",
-                    assignedTo: "Emily Johnson",
-                    dueDate: new Date(2024, 7, 18),
-                    files: [],
-                },
+                }
             ],
         },
         {
@@ -75,7 +67,7 @@ export const boardData = {
                     title: "Modular structure",
                     description: "Write css in form of modules to reduce the naming conflicts",
                     assignedTo: "",
-                    dueDate: null,
+                    dueDate: new Date(2025, 7, 15),
                     files: [],
                 },
             ],

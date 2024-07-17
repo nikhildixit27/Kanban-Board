@@ -20,7 +20,7 @@ export const Login = () => {
         try {
             await login(email, password);
             toast.success('User logged in successfully');
-            navigate(from, { replace: true });
+            navigate('/kanban');
         } catch (error) {
             const errorMessage = error.message;
             setError(errorMessage);
